@@ -6,44 +6,75 @@ export default function App() {
     `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`
   );
 
+  const [quote, setQuote] = useState([
+    "Aristotle Onassis",
+    "It's in our darkest moments that we must focus to see the light.",
+  ]);
+
+  const quotes: string[][] = [];
+
+  for (const author in data) {
+    for (const quote of data[author]) {
+      quotes.push([author, quote]);
+    }
+  }
+
   function random(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+  function shuffleArr(arr: any[]) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+
+    return arr;
+  }
+
   function handleClick() {
     setColor(`rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`);
+    shuffleArr(quotes);
+    setQuote(quotes[0]);
   }
 
   return (
     <div
-      className="flex justify-center items-center h-screen"
+      className="flex flex-col gap-6 justify-center items-center h-screen transition-colors duration-1000"
       style={{ backgroundColor: color }}
     >
-      <div className="p-10 bg-white rounded-md">
-        <div className="flex flex-col" style={{ color: color }}>
+      <h1 className="text-5xl font-bold">Random Quote Machine</h1>
+      <div className="max-w-4xl p-10 mx-5 bg-white rounded-md" id="quote-box">
+        <div
+          className="flex flex-col transition-colors duration-[600ms]"
+          style={{ color: color }}
+        >
           <div className="inline-flex gap-1">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 16 16"
-              width="24"
-              height="24"
-              fill="currentColor"
-            >
-              <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
-            </svg>
-            <blockquote>
-              <p className="text-2xl">
-                The Only way to do work is to love what you do.
-              </p>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="24"
+                height="24"
+                fill="currentColor"
+              >
+                <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+              </svg>
+            </span>
+
+            <blockquote id="text">
+              <p className="text-2xl">{quote[1]}</p>
             </blockquote>
           </div>
 
-          <p className="self-end text-xl">— Steve Jobs</p>
+          <p className="self-end  my-3 text-xl" id="author">
+            — {quote[0]}
+          </p>
         </div>
-        <div className="m-2 flex justify-between items-center">
+        <div className="m-2 flex justify-between items-center gap-1">
           <div className="inline-flex gap-3">
             <a
-              className="w-fit h-fit p-2 text-white rounded-md"
+              className="w-fit h-fit p-2 text-white rounded-md transition-colors duration-500"
               style={{ backgroundColor: color }}
               href=""
             >
@@ -58,9 +89,11 @@ export default function App() {
               </svg>
             </a>
             <a
-              className="w-fit h-fit p-2 text-white rounded-md"
+              className="w-fit h-fit p-2 text-white rounded-md transition-colors duration-500"
+              id="tweet-quote"
               style={{ backgroundColor: color }}
-              href=""
+              href="twitter.com/intent/tweet"
+              target="_blank"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +107,8 @@ export default function App() {
             </a>
           </div>
           <button
-            className="p-3 text-white rounded-md"
+            className="p-2 text-white rounded-md transition-colors duration-500 active:scale-95"
+            id="new-quote"
             style={{ backgroundColor: color }}
             type="button"
             onClick={() => {
