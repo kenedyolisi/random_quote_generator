@@ -40,11 +40,11 @@ export default function App() {
 
   return (
     <div
-      className="flex flex-col gap-6 justify-center items-center h-screen transition-colors duration-700"
+      className="flex flex-col gap-6 justify-center items-center h-screen transition-colors duration-1000"
       style={{ backgroundColor: color }}
     >
       <h1 className="text-5xl font-bold">Random Quote Machine</h1>
-      <div className="max-w-4xl p-10 mx-5 bg-white rounded-md">
+      <div className="max-w-4xl p-10 mx-5 bg-white rounded-md" id="quote-box">
         <div
           className="flex flex-col transition-colors duration-[600ms]"
           style={{ color: color }}
@@ -62,12 +62,14 @@ export default function App() {
               </svg>
             </span>
 
-            <blockquote>
+            <blockquote id="text">
               <p className="text-2xl">{quote[1]}</p>
             </blockquote>
           </div>
 
-          <p className="self-end  my-3 text-xl">— {quote[0]}</p>
+          <p className="self-end  my-3 text-xl" id="author">
+            — {quote[0]}
+          </p>
         </div>
         <div className="m-2 flex justify-between items-center gap-1">
           <div className="inline-flex gap-3">
@@ -88,8 +90,10 @@ export default function App() {
             </a>
             <a
               className="w-fit h-fit p-2 text-white rounded-md transition-colors duration-500"
+              id="tweet-quote"
               style={{ backgroundColor: color }}
-              href=""
+              href="twitter.com/intent/tweet"
+              target="_blank"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,6 +108,7 @@ export default function App() {
           </div>
           <button
             className="p-2 text-white rounded-md transition-colors duration-500 active:scale-95"
+            id="new-quote"
             style={{ backgroundColor: color }}
             type="button"
             onClick={() => {
