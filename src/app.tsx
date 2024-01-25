@@ -92,7 +92,7 @@ export default function App() {
               className="w-fit h-fit p-2 text-white rounded-md transition-colors duration-500"
               id="tweet-quote"
               style={{ backgroundColor: color }}
-              href="twitter.com/intent/tweet"
+              href={`https://twitter.com/intent/tweet?text="${quote[1]}" —${quote[0]}&hashtags=quotes`}
               target="_blank"
             >
               <svg
