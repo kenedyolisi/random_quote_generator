@@ -6,11 +6,6 @@ export default function App() {
     `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`
   );
 
-  const [quote, setQuote] = useState([
-    "Aristotle Onassis",
-    "It's in our darkest moments that we must focus to see the light.",
-  ]);
-
   const quotes: string[][] = [];
 
   for (const author in data) {
@@ -18,7 +13,10 @@ export default function App() {
       quotes.push([author, quote]);
     }
   }
+  
+  shuffleArr(quotes);
 
+  const [quote, setQuote] = useState(quotes[0]);
   function random(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
