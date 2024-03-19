@@ -4,6 +4,6 @@ import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/random-quote-machine/",
+  base: "/random-quote-generator/",
   plugins: [svelte(), ViteYaml()],
 });
