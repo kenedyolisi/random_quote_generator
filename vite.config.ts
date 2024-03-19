@@ -1,9 +1,9 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
 import ViteYaml from "@modyfi/vite-plugin-yaml";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
+import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "/random-quote-machine/",
-  plugins: [react(), ViteYaml()],
+  plugins: [svelte(), ViteYaml()],
 });
