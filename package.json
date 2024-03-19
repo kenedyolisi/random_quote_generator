@@ -1,5 +1,5 @@
 {
-  "name": "random-quote-machine",
+  "name": "random-quote-generator",
   "private": true,
   "version": "0.0.0",
   "type": "module",
