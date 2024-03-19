@@ -22,12 +22,12 @@
 </script>
 
 <div
-  class="container flex flex-col gap-6 justify-center items-center h-screen px-5 transition-colors duration-1000"
+  class="flex flex-col gap-6 justify-center items-center h-screen px-5 transition-colors duration-1000"
   style={`background-color: ${color}`}
 >
-  <h1 class="text-5xl font-bold">Random Quote Machine</h1>
+  <h1 class="text-5xl font-bold">Random Quote Generator</h1>
   <div
-    class="sm:w-4/5 md:w-3/5 max-w-4xl p-10 mx-5 bg-white rounded-md"
+    class="w-full sm:w-4/5 md:w-3/5 max-w-4xl p-10 mx-5 bg-white rounded-md"
     id="quote-box"
   >
     <div
@@ -39,11 +39,11 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
-            width="30"
-            fill="currentColor"
+            width={30}
           >
             <path
-              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+              fill="currentColor"
+              d="M6.848 2.47a1 1 0 0 1-.318 1.378A7.284 7.284 0 0 0 3.75 7.01 3 3 0 1 1 1 10v-.027a3.521 3.521 0 0 1 .01-.232c.009-.15.027-.36.062-.618.07-.513.207-1.22.484-2.014.552-1.59 1.67-3.555 3.914-4.957a1 1 0 0 1 1.378.318m7 0a1 1 0 0 1-.318 1.378 7.283 7.283 0 0 0-2.78 3.162A3 3 0 1 1 8 10v-.027a3.521 3.521 0 0 1 .01-.232c.009-.15.027-.36.062-.618.07-.513.207-1.22.484-2.014.552-1.59 1.67-3.555 3.914-4.957a1 1 0 0 1 1.378.318"
             />
           </svg>
         </span>
