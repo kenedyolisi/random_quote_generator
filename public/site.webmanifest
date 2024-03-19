@@ -27,7 +27,8 @@
       "purpose": "maskable"
     }
   ],
-  "start_url": "/",
+  "start_url": "/random-quote-generator/",
+  "id": "/random-quote-generator/",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#FFFFFF"
