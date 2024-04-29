@@ -14,8 +14,8 @@ dependencies:
 
 devDependencies:
   '@builder.io/partytown':
-    specifier: ^0.10.0
-    version: 0.10.0
+    specifier: ^0.10.2
+    version: 0.10.2
   '@modyfi/vite-plugin-yaml':
     specifier: ^1.1.0
     version: 1.1.0(vite@5.2.10)
@@ -278,8 +278,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@builder.io/partytown@0.10.0:
-    resolution: {integrity: sha512-OS/o9lAmK5rZZLkjFmghPNmp3P40uTF5yu2rFY3TVlnSie7CQhwrQ+5lycUkHqrDVyI4NOnOiA655Q1eGPE2pw==}
+  /@builder.io/partytown@0.10.2:
+    resolution: {integrity: sha512-A9U+4PREWcS+CCYzKGIPovtGB/PBgnH/8oQyCE6Nr9drDJk6cMPpLQIEajpGPmG9tYF7N3FkRvhXm/AS9+0iKg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dev: true
