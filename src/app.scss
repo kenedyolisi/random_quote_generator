@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-
   a,
   button {
-    @apply outline-offset-2
+    @apply outline-offset-4;
   }
 }
