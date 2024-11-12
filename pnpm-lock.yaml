@@ -33,9 +33,6 @@ importers:
       postcss:
         specifier: ^8.4.36
         version: 8.4.36
-      sass:
-        specifier: ^1.72.0
-        version: 1.72.0
       svelte-check:
         specifier: ^4.0.7
         version: 4.0.7(picomatch@2.3.1)(svelte@5.1.15)(typescript@5.6.3)
@@ -2412,7 +2409,7 @@ snapshots:
       '@babel/core': 7.24.1
       '@babel/helper-compilation-targets': 7.23.6
       '@babel/helper-plugin-utils': 7.24.0
-      debug: 4.3.4
+      debug: 4.3.7
       lodash.debounce: 4.0.8
       resolve: 1.22.8
     transitivePeerDependencies:
@@ -3858,7 +3855,8 @@ snapshots:
 
   idb@7.1.1: {}
 
-  immutable@4.3.5: {}
+  immutable@4.3.5:
+    optional: true
 
   inflight@1.0.6:
     dependencies:
@@ -4288,6 +4286,7 @@ snapshots:
       chokidar: 3.6.0
       immutable: 4.3.5
       source-map-js: 1.1.0
+    optional: true
 
   semver@6.3.1: {}
 
