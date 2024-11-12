@@ -1,6 +1,3 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-
 # Documentation: https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
@@ -11,9 +8,12 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+      timezone: "Africa/Nairobi"
+    open-pull-requests-limit: 10
 
   - package-ecosystem: "github-actions"
     # Workflow files stored in the default location of `.github/workflows`
     directory: "/"
     schedule:
       interval: "weekly"
+      timezone: "Africa/Nairobi"
