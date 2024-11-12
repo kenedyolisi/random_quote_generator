@@ -1,6 +1,6 @@
 <script lang="ts">
-  import random from "./utils/random_number";
-  import shuffleArr from "./utils/shuffle_array";
+  import { random } from "./utils";
+  import { shuffleArr } from "./utils";
   import quotesData from "/src/data/quotes.yaml";
 
   let quotes = [];
