@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.2",
-    "svelte": "^4.2.12"
+    "svelte": "^4.2.19"
   },
   "devDependencies": {
     "@builder.io/partytown": "^0.9.2",
