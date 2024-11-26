@@ -17,6 +17,7 @@
     "@tailwindcss/vite": "4.0.0-beta.2",
     "@tsconfig/svelte": "^5.0.4",
     "autoprefixer": "^10.4.20",
+    "bits-ui": "1.0.0-next.64",
     "svelte": "^5.2.8",
     "svelte-check": "^4.1.0",
     "tailwindcss": "4.0.0-beta.2",
