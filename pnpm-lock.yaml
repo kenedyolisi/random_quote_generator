@@ -35,6 +35,9 @@ importers:
       svelte-check:
         specifier: ^4.1.0
         version: 4.1.0(svelte@5.2.8)(typescript@5.7.2)
+      tailwind-merge:
+        specifier: ^2.5.4
+        version: 2.5.4
       tailwind-variants:
         specifier: ^0.3.0
         version: 0.3.0(tailwindcss@4.0.0-beta.2)
