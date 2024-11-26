@@ -29,6 +29,9 @@ importers:
       bits-ui:
         specifier: 1.0.0-next.64
         version: 1.0.0-next.64(svelte@5.2.8)
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       svelte:
         specifier: ^5.2.8
         version: 5.2.8
