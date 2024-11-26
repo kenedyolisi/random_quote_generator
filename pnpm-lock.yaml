@@ -23,9 +23,6 @@ importers:
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
-      postcss:
-        specifier: ^8.4.49
-        version: 8.4.49
       svelte:
         specifier: ^5.2.8
         version: 5.2.8
