@@ -20,6 +20,7 @@
     "bits-ui": "1.0.0-next.64",
     "svelte": "^5.2.8",
     "svelte-check": "^4.1.0",
+    "tailwind-variants": "^0.3.0",
     "tailwindcss": "4.0.0-beta.2",
     "tslib": "^2.8.1",
     "typescript": "^5.7.2",
