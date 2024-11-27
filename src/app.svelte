@@ -61,7 +61,7 @@
     <div class="m-2 flex justify-between items-center gap-1">
       <div class="inline-flex gap-3">
         <a
-          class="w-fit h-fit p-2 text-white rounded-md transition-colors duration-500"
+          class="h-10 p-2 outline-offset-3 text-white rounded-md transition-colors duration-500"
           style={`background-color: ${color}`}
           href="https://facebook.com"
           target="_blank"
@@ -80,7 +80,7 @@
           <span class="sr-only">Share on facebook</span>
         </a>
         <a
-          class="w-fit h-fit p-2 text-white rounded-md transition-colors duration-500"
+          class="size-10 p-2 text-white rounded-md transition-colors duration-500"
           id="tweet-quote"
           style={`background-color: ${color}`}
           href={`https://twitter.com/intent/tweet?text="${quote[1]}" —${quote[0]}&hashtags=quotes`}
@@ -102,7 +102,7 @@
         </a>
       </div>
       <button
-        class="p-3 text-white text-xl rounded-md transition-colors duration-500 active:scale-95"
+        class="h-10 px-3 outline-offset-3 text-white text-xl rounded-md transition-colors duration-500 active:scale-95"
         id="new-quote"
         style={`background-color: ${color}`}
         type="button"
