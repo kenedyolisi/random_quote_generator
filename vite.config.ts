@@ -11,6 +11,6 @@ export default defineConfig({
     svelte(),
     tailwindcss(),
     ViteYaml(),
-    VitePWA({ registerType: "autoUpdate", devOptions: { enabled: true } }),
+    VitePWA({ registerType: "prompt", devOptions: { enabled: true } }),
   ],
 });
