@@ -43,10 +43,10 @@ importers:
         version: 2.5.5
       tailwind-variants:
         specifier: ^0.3.0
-        version: 0.3.0(tailwindcss@4.0.0-beta.2)
+        version: 0.3.0(tailwindcss@4.0.0-beta.4)
       tailwindcss:
-        specifier: 4.0.0-beta.2
-        version: 4.0.0-beta.2
+        specifier: 4.0.0-beta.4
+        version: 4.0.0-beta.4
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -4286,10 +4286,10 @@ snapshots:
 
   tailwind-merge@2.5.5: {}
 
-  tailwind-variants@0.3.0(tailwindcss@4.0.0-beta.2):
+  tailwind-variants@0.3.0(tailwindcss@4.0.0-beta.4):
     dependencies:
       tailwind-merge: 2.5.5
-      tailwindcss: 4.0.0-beta.2
+      tailwindcss: 4.0.0-beta.4
 
   tailwindcss@4.0.0-beta.2: {}
 
