@@ -43,10 +43,10 @@ importers:
         version: 2.5.5
       tailwind-variants:
         specifier: ^0.3.0
-        version: 0.3.0(tailwindcss@4.0.0-beta.5)
+        version: 0.3.0(tailwindcss@4.0.0-beta.6)
       tailwindcss:
-        specifier: 4.0.0-beta.5
-        version: 4.0.0-beta.5
+        specifier: 4.0.0-beta.6
+        version: 4.0.0-beta.6
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -1982,8 +1982,8 @@ packages:
   tailwindcss@4.0.0-beta.4:
     resolution: {integrity: sha512-mkjpwMyaHCa3L5HmRjYyY8w8D+7brxwbM7YQxH8QeEFtCURd5fvdHIC9TEpIaL1X49vhl8cuOFY6Nhi6sCsI5w==}
 
-  tailwindcss@4.0.0-beta.5:
-    resolution: {integrity: sha512-59zeDyaVE5z1iQnhk5cGeBJvb6Z/Iym4qSFzPddiotWbnqWcIqj0kRgZH8OyR4VZU+solTRQaWRgfDZ8PQ+p8A==}
+  tailwindcss@4.0.0-beta.6:
+    resolution: {integrity: sha512-eCCuMk3H65w4J/QWkjxfeWoBSKbCD3E6Uj2LA6Xkkl4eMa1MXuwVpIU1RXcLIp+BVsXGEZMP7i7uJig7KxfAXQ==}
 
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
@@ -4291,14 +4291,14 @@ snapshots:
 
   tailwind-merge@2.5.5: {}
 
-  tailwind-variants@0.3.0(tailwindcss@4.0.0-beta.5):
+  tailwind-variants@0.3.0(tailwindcss@4.0.0-beta.6):
     dependencies:
       tailwind-merge: 2.5.5
-      tailwindcss: 4.0.0-beta.5
+      tailwindcss: 4.0.0-beta.6
 
   tailwindcss@4.0.0-beta.4: {}
 
-  tailwindcss@4.0.0-beta.5: {}
+  tailwindcss@4.0.0-beta.6: {}
 
   tapable@2.2.1: {}
 
