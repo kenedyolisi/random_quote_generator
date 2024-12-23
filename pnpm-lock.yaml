@@ -43,10 +43,10 @@ importers:
         version: 2.5.5
       tailwind-variants:
         specifier: ^0.3.0
-        version: 0.3.0(tailwindcss@4.0.0-beta.5)
+        version: 0.3.0(tailwindcss@4.0.0-beta.8)
       tailwindcss:
-        specifier: 4.0.0-beta.5
-        version: 4.0.0-beta.5
+        specifier: 4.0.0-beta.8
+        version: 4.0.0-beta.8
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -1941,9 +1941,6 @@ packages:
     engines: {node: '>=16.x', pnpm: '>=7.x'}
     peerDependencies:
       tailwindcss: '*'
-
-  tailwindcss@4.0.0-beta.5:
-    resolution: {integrity: sha512-59zeDyaVE5z1iQnhk5cGeBJvb6Z/Iym4qSFzPddiotWbnqWcIqj0kRgZH8OyR4VZU+solTRQaWRgfDZ8PQ+p8A==}
 
   tailwindcss@4.0.0-beta.8:
     resolution: {integrity: sha512-21HmdRq9tHDLJZavb2cRBGJxBvRODpwb0/t3tRbMOl65hJE6zG6K6lD6lLS3IOC35u4SOjKjdZiJJi9AuWCf+Q==}
@@ -4232,12 +4229,10 @@ snapshots:
 
   tailwind-merge@2.5.5: {}
 
-  tailwind-variants@0.3.0(tailwindcss@4.0.0-beta.5):
+  tailwind-variants@0.3.0(tailwindcss@4.0.0-beta.8):
     dependencies:
       tailwind-merge: 2.5.5
-      tailwindcss: 4.0.0-beta.5
-
-  tailwindcss@4.0.0-beta.5: {}
+      tailwindcss: 4.0.0-beta.8
 
   tailwindcss@4.0.0-beta.8: {}
 
