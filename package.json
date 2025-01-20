@@ -19,7 +19,7 @@
     "autoprefixer": "^10.4.20",
     "bits-ui": "1.0.0-next.77",
     "clsx": "^2.1.1",
-    "svelte": "^5.18.0",
+    "svelte": "^5.19.0",
     "svelte-check": "^4.1.0",
     "tailwind-merge": "^2.6.0",
     "tailwind-variants": "^0.3.0",
