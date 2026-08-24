@@ -18,7 +18,7 @@
     "@sveltejs/kit": "^2.70.0",
     "@sveltejs/vite-plugin-svelte": "^7.3.0",
     "@tailwindcss/vite": "^4.3.0",
-    "bits-ui": "^2.18.0",
+    "bits-ui": "^2.19.0",
     "clsx": "^2.1.1",
     "prettier": "3.9.5",
     "prettier-plugin-svelte": "^4.1.0",
